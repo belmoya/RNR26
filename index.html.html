@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNRYP 2026 - IEEE Reunión Nacional de Ramas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        ieee: {
+                            blue: '#00629B',
+                            dark: '#002855',
+                            light: '#E6F0F9',
+                            accent: '#00B5E2'
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark-glass {
+            background: rgba(0, 40, 85, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 glass-panel shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-6">
+                    <!-- IEEE Logo -->
+                    <img class="h-8 md:h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/21/IEEE_logo.svg" alt="IEEE Logo">
+                    <!-- Vertical Divider -->
+                    <div class="h-8 w-px bg-slate-300 hidden sm:block"></div>
+                    <img class="h-12 md:h-16 w-auto object-contain hidden sm:block" src="image_8a5729.png" alt="RNRYP 2026 Logo">
+                </div>
+                <div>
+                    <a href="#inscripcion" class="bg-ieee-blue hover:bg-ieee-dark text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base">
+                        Inscribirse Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-900 overflow-hidden">
+        <!-- Animated Background Blobs -->
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-ieee-accent rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-ieee-blue rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full dark-glass text-ieee-light text-sm font-medium tracking-wide mb-8 border border-white/10">
+                    <span class="w-2 h-2 rounded-full bg-ieee-accent animate-pulse"></span>
+                    IEEE Argentina & FCEFyN UNC
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 text-white drop-shadow-lg">
+                    RNRYP <span class="text-transparent bg-clip-text bg-gradient-to-r from-ieee-accent to-ieee-blue">2026</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Reunión Nacional de Ramas y Young Professionals. Conectá, aprendé y viví la experiencia en el corazón del país.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+                    <div class="dark-glass px-6 py-4 rounded-2xl flex items-center gap-4 w-full sm:w-auto">
+                        <div class="bg-ieee-blue/20 p-3 rounded-xl">
+                            <svg class="w-6 h-6 text-ieee-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Fecha</p>
+                            <p class="font-semibold text-white">11-12 Nov, 2026</p>
+                        </div>
+                    </div>
+                    <div class="dark-glass px-6 py-4 rounded-2xl flex items-center gap-4 w-full sm:w-auto">
+                        <div class="bg-ieee-blue/20 p-3 rounded-xl">
+                            <svg class="w-6 h-6 text-ieee-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.242-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Ubicación</p>
+                            <p class="font-semibold text-white">Córdoba, AR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Curve -->
+        <div class="absolute bottom-0 w-full leading-none z-0">
+            <svg class="block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-slate-50"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-ieee-blue tracking-widest uppercase mb-2">Información General</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Tu experiencia, todo incluido</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Diseñamos el evento para que solo tengas que preocuparte por conectar y aprender. Mirá todo lo que incluye tu inscripción.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Info Cards with modern hover -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-ieee-blue group-hover:text-white transition-colors duration-300 shadow-inner">🏨</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Estadía</h4>
+                    <p class="text-slate-600 leading-relaxed">Alojamiento cubierto para las noches del miércoles 11 y jueves 12.</p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-ieee-blue group-hover:text-white transition-colors duration-300 shadow-inner">🎉</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Cena de Clausura</h4>
+                    <p class="text-slate-600 leading-relaxed">Festejá con nosotros el cierre en una noche especial el jueves.</p>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-ieee-blue group-hover:text-white transition-colors duration-300 shadow-inner">🎁</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Kit Exclusivo</h4>
+                    <p class="text-slate-600 leading-relaxed">Merchandising y materiales de trabajo diseñados para esta edición.</p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-ieee-blue group-hover:text-white transition-colors duration-300 shadow-inner">🍽️</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Comidas y Refrigerios</h4>
+                    <p class="text-slate-600 leading-relaxed">Incluye 2 almuerzos, 2 cenas y coffee breaks durante el evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-sm font-bold text-ieee-blue tracking-widest uppercase mb-2">Alojamiento</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Descanso</h3>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Seleccionamos cuidadosamente opciones confortables y céntricas en Córdoba. Los hostels están ubicados estratégicamente para facilitar la logística.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-200">
+                            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            <span class="font-bold text-slate-800">Hostel Why Not</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-200">
+                            <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            <span class="font-bold text-slate-800">Guemes Hostel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="grid grid-cols-2 gap-4 md:gap-6">
+                        <div class="space-y-4">
+                            <div class="rounded-3xl overflow-hidden shadow-xl border border-white/50 relative group">
+                                <img src="image_8a61ae.jpg" alt="Hostel Why Not" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 transition-opacity duration-300 flex items-end p-5">
+                                    <span class="text-white font-bold text-lg">Hostel Why Not</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-10">
+                            <div class="rounded-3xl overflow-hidden shadow-xl border border-white/50 relative group">
+                                <img src="image_8a61ed.jpg" alt="Guemes Hostel" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 transition-opacity duration-300 flex items-end p-5">
+                                    <span class="text-white font-bold text-lg">Guemes Hostel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white" id="inscripcion">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-ieee-blue tracking-widest uppercase mb-2">Inversión</h2>
+                <h3 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Guía de Inscripción y Pagos</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Aprovechá los descuentos por inscripción temprana. Opciones de pago en cuotas disponibles.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto items-center">
+                
+                <!-- Early Bird (Highlighted) -->
+                <div class="bg-ieee-dark rounded-3xl shadow-2xl border border-ieee-blue/30 p-1 lg:scale-110 relative transform transition-all duration-300 z-10">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-ieee-accent to-ieee-blue text-white text-sm font-bold px-6 py-1.5 rounded-full uppercase tracking-widest shadow-lg z-10 whitespace-nowrap">
+                        Etapa Actual
+                    </div>
+                    <div class="bg-slate-900 rounded-[22px] p-8 h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-ieee-blue rounded-full mix-blend-screen filter blur-3xl opacity-20"></div>
+                        
+                        <div class="mb-8 relative z-10">
+                            <h4 class="text-3xl font-bold text-white mb-2">Early Bird</h4>
+                            <p class="text-ieee-light font-medium">Hasta 27 Sep</p>
+                        </div>
+                        <div class="space-y-6 relative z-10">
+                            <div>
+                                <p class="text-xs text-ieee-accent uppercase tracking-widest font-bold mb-1">Miembros IEEE</p>
+                                <p class="text-4xl lg:text-5xl font-black text-white">$120.000</p>
+                            </div>
+                            <div class="h-px w-full bg-white/10"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">No Miembros</p>
+                                <p class="text-3xl font-bold text-slate-300">$142.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                    <div class="mb-8">
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Regular</h4>
+                        <p class="text-slate-500 font-medium">28 Sep - 31 Oct</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Miembros IEEE</p>
+                            <p class="text-4xl font-extrabold text-slate-900">$142.500</p>
+                        </div>
+                        <div class="h-px w-full bg-slate-100"></div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">No Miembros</p>
+                            <p class="text-3xl font-bold text-slate-600">$165.000</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-100 relative z-10">
+                        <p class="text-sm text-green-500 font-medium flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            1 o 2 cuotas sin interés
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Late Bird -->
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-8 relative hover:shadow-2xl transition-all duration-300">
+                    <div class="mb-8">
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Late Bird</h4>
+                        <p class="text-slate-500 font-medium">Desde 1 Nov</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Miembros IEEE</p>
+                            <p class="text-4xl font-extrabold text-slate-900">$195.000</p>
+                        </div>
+                        <div class="h-px w-full bg-slate-100"></div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">No Miembros</p>
+                            <p class="text-3xl font-bold text-slate-600">$225.000</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-100">
+                        <p class="text-sm text-amber-500 font-medium flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Solo en 1 pago
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  <!-- Prominent Floating CTA -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3OFMR8XhhqHBW5IFHRNrDk6Ww-2zRTGblwu8zRyz_256OOw/viewform" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 lg:bottom-10 lg:right-10 z-50 bg-gradient-to-r from-ieee-blue to-ieee-dark text-white font-bold py-4 px-6 lg:px-8 rounded-full shadow-2xl hover:shadow-[0_20px_50px_rgba(0,98,155,0.5)] transform hover:-translate-y-2 transition-all duration-300 flex items-center gap-3 border border-white/20">
+        <span class="hidden sm:inline">Completar Formulario</span>
+        <span class="sm:hidden">Inscribirse</span>
+        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </a>
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-xl border border-slate-100 relative overflow-hidden">
+                <!-- Abstract corner decoration -->
+                <div class="absolute -right-16 -top-16 w-64 h-64 bg-ieee-light rounded-full opacity-50 blur-3xl"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-ieee-light text-ieee-blue rounded-2xl mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Datos para el Pago</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Realizá la transferencia a la siguiente cuenta. <strong>Es crucial que conserves el comprobante</strong>, ya que deberás adjuntarlo en el formulario final para confirmar tu lugar.
+                        </p>
+                    </div>
+                    
+                    <div class="md:w-1/2 w-full">
+                        <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+                            <div class="mb-5">
+                                <span class="block text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Titular</span>
+                                <span class="block text-lg font-bold text-slate-900">Nicolas Lopez Casanegra</span>
+                            </div>
+                            <div class="mb-5">
+                                <span class="block text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Banco / Billetera</span>
+                                <span class="block text-lg font-bold text-slate-900">Ualá</span>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-slate-400 uppercase tracking-widest font-bold mb-2">CVU</span>
+                                <div class="flex justify-between items-center bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-ieee-blue transition-colors group">
+                                    <code class="text-sm sm:text-base font-mono text-ieee-dark font-bold break-all" id="cvu-text">3840200500000030310957</code>
+                                    <button onclick="copyCVU()" class="ml-4 flex-shrink-0 bg-slate-100 hover:bg-ieee-blue hover:text-white text-slate-600 p-2.5 rounded-lg transition-all duration-300" title="Copiar CVU">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                    </button>
+                                </div>
+                                <p id="copy-msg" class="text-emerald-500 text-sm font-semibold mt-3 opacity-0 transition-opacity duration-300 flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    ¡Copiado al portapapeles!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white mb-10 text-center">Políticas y Seguros</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="dark-glass p-8 rounded-3xl border border-white/10">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Política de Devoluciones</h4>
+                    <p class="leading-relaxed">Una vez realizado el pago de la inscripción, el mismo <strong class="text-white">no cuenta con devolución</strong> por baja o cancelación por parte del participante, sin excepciones.</p>
+                </div>
+                <div class="dark-glass p-8 rounded-3xl border border-white/10">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-6 text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Cobertura de Seguro</h4>
+                    <p class="leading-relaxed">El seguro contratado cubre <strong class="text-white">únicamente incidentes ocurridos dentro de los recintos oficiales</strong> (Facultad u Hostel). No cubre trayectos ni desplazamientos externos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-6 mb-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <img class="h-8 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/21/IEEE_logo.svg" alt="IEEE Logo">
+                <div class="h-6 w-px bg-slate-700"></div>
+                <img class="h-10 w-auto object-contain" src="image_8a5729.png" alt="RNRYP 2026 Logo">
+            </div>
+            <p>&copy; 2026 IEEE RNRYP - Reunión Nacional de Ramas y Young Professionals.</p>
+            <p class="text-sm mt-2">Córdoba, Argentina</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyCVU() {
+            const cvuText = document.getElementById('cvu-text').innerText;
+            
+            // Modern Clipboard API
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(cvuText).then(() => {
+                    showCopySuccess();
+                });
+            } else {
+                // Fallback for non-secure contexts (like some iframes)
+                const textArea = document.createElement("textarea");
+                textArea.value = cvuText;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showCopySuccess();
+                } catch (err) {
+                    console.error('Fallback: Oops, unable to copy', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function showCopySuccess() {
+            const msg = document.getElementById('copy-msg');
+            msg.classList.remove('opacity-0');
+            setTimeout(() => {
+                msg.classList.add('opacity-0');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
